@@ -12,7 +12,7 @@
         <h:form id="form">
             <p>Hola</p>
 
-            <p:fileUpload fileUploadListener="#{fileUploadController.upload}"  allowTypes="/(\.|\/)(gif|jpg|png)$/" sizeLimit="100000" description="Select Images" />
+            <p:fileUpload fileUploadListener="#{fileUploadController.upload}"  allowTypes="/(\.|\/)(gif|jpg|png)$/" sizeLimit="100000" description="Select Images" fileLimit="1" fileLimitMessage="Solo 1 archivo"/>
             <p>Fin</p>
         </h:form>
     </h:body>
