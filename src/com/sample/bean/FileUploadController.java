@@ -1,16 +1,14 @@
 package com.sample.bean;
 
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
+import java.io.*;
 
 import javax.faces.application.FacesMessage;
 import javax.faces.bean.ManagedBean;
+import javax.faces.context.ExternalContext;
 import javax.faces.context.FacesContext;
 
 import org.primefaces.event.FileUploadEvent;
+import org.primefaces.model.UploadedFile;
 
 @ManagedBean(name="fileUploadController")
 public class FileUploadController {
@@ -51,4 +49,6 @@ public class FileUploadController {
             System.out.println(e.getMessage());
         }
     }
+
+
 }

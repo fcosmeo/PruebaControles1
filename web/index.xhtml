@@ -4,20 +4,17 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
-      xmlns:f="http://xmlns.jcp.org/jsf/core"
-      xmlns:p="http://primefaces.org/ui">
+      xmlns:f="http://xmlns.jcp.org/jsf/core" xmlns:p="http://primefaces.org/ui">
+<f:view>
+    <h:head></h:head>
 
-      <f:view>
-          <h:head></h:head>
+    <h:body>
+        <h:form id="form">
+            <p>Hola</p>
 
-          <h:body>
-              <h:form id="form">
-                  <p>Hola</p>
-
-                  <p:fileUpload fileUploadListener="#{fileUploadController.upload}"  allowTypes="/(\.|\/)(gif|jpg|png)$/" sizeLimit="100000" description="Select Images"/>
-                <p>Fin</p>
-              </h:form>
-          </h:body>
-      </f:view>
-
+            <p:fileUpload fileUploadListener="#{fileUploadController.upload}"  allowTypes="/(\.|\/)(gif|jpg|png)$/" sizeLimit="100000" description="Select Images" />
+            <p>Fin</p>
+        </h:form>
+    </h:body>
+</f:view>
 </html>
